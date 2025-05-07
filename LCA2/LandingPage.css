@@ -1,0 +1,258 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', Arial, sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.element {
+  background-color: #ffffff;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 5%;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.logo {
+  height: 45px;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.language-selector {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.globe-icon {
+  width: 20px;
+}
+
+.dropdown-icon {
+  width: 10px;
+}
+
+.nav-links {
+  color: #3760aa;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.separator {
+  margin: 0 10px;
+  color: #d9d9d9;
+}
+
+/* Login Button - Orange with blue hover */
+.login-btn {
+  background-color: #ef4f45;
+  color: white;
+  border: none;
+  padding: 8px 25px;
+  border-radius: 35px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: #3760aa;
+  transform: scale(1.05);
+}
+
+/* Top Register Button - Orange with blue hover */
+.register-btn-top {
+  background-color: #ef4f45;
+  color: white;
+  border: none;
+  padding: 8px 25px;
+  border-radius: 35px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.register-btn-top:hover {
+  background-color: #3760aa;
+  transform: scale(1.05);
+}
+
+/* Bottom Register Button - Blue with orange hover */
+.register-btn-bottom {
+  background-color: #3760aa;
+  color: white;
+  border: none;
+  padding: 18px 40px;
+  border-radius: 35px;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+}
+
+.register-btn-bottom:hover {
+  background-color: #ef4f45;
+  transform: scale(1.05);
+}
+
+/* Learn More Button - Blue with orange hover */
+.learn-more-btn {
+  background-color: #3760aa;
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.learn-more-btn:hover {
+  background-color: #ef4f45;
+  transform: scale(1.05);
+}
+
+.navigation {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 15px 5%;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+/* Navigation Items - Blue with orange hover */
+.nav-item {
+  color: #3760aa;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-block;
+  padding: 5px 10px;
+}
+
+.nav-item:hover {
+  color: #ef4f45;
+  transform: scale(1.1);
+  font-weight: 700;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 40px 5%;
+  gap: 30px;
+}
+
+.content-left {
+  flex: 1 1 100%;
+  max-width: 100%;
+  z-index: 2;
+}
+
+.hero-title {
+  font-size: 48px;
+  line-height: 1.1;
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+
+.quick, .easy {
+  color: #ef4f45;
+}
+
+.and {
+  color: #3860ab;
+}
+
+.description {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.hero-image {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  z-index: 1;
+}
+
+.blue-circle, .red-circle {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .main-content {
+    flex-wrap: nowrap;
+  }
+
+  .content-left {
+    flex: 1;
+    max-width: 60%;
+  }
+
+  .hero-image {
+    max-width: 40%;
+    transform: translateY(0%);
+    display: block;
+  }
+
+  .hero-title {
+    font-size: 64px;
+  }
+
+  .blue-circle, .red-circle {
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+    z-index: 0;
+  }
+
+  .blue-circle {
+    right: -150px;
+    bottom: -150px;
+    width: 400px;
+    height: 400px;
+    background-color: #3760aa;
+  }
+
+  .red-circle {
+    right: 80px;
+    top: 180px;
+    width: 280px;
+    height: 280px;
+    background-color: #ef4f45;
+    opacity: 0.8;
+  }
+}
